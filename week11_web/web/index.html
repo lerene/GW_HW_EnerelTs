@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<!-- CONFIGURATIONS -->
+
+<head>
+  <title>Landing Page</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+
+  <!-- CUSTOM STYLE SHEETS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<!-- WEB ELEMENT COMPONENTS -->
+
+<body>
+  <!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+    <a class="navbar-brand" href="index.html"><h1><strong>Latitude</strong></h1></a>
+      
+  
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+
+    </button>
+    
+    
+ 
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+
+         
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="lat-temp.html">Latitude vs. Max Temperature</a>
+            <a class="dropdown-item" href="lat-humidity.html">Latitude vs. Humidity</a>
+            <a class="dropdown-item" href="lat-cloudiness.html">Latitude vs. Cloudiness</a>
+            <a class="dropdown-item" href="lat-wind.html">Latitude vs. Wind Speed</a>
+          
+          </li>
+           <li class="nav-item">
+             <a class="nav-link" href="data.html">Data</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="comparisons.html">Comparison</a>
+           </li> 
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- NAVBAR END -->
+ 
+  <!-- MAIN CONTENT -->
+  <div class="container">
+      <div class="row">
+         
+          <div class="col-md-6 pad top"> <br>
+            <h3 style="color:Turquoise">Summary: Latitude vs X</h3> <br>
+          </div>
+          <div class="col-md-6 pad top"> <br>
+            <h3 style="color:Turquoise">Visualizations</h3> <br>
+          </div>
+        </div>
+      <div class="row">
+          <div class="col-md-6 pad top"> <br>
+            <div class="pull-left">
+              <img src="Resources/assets/images/Fig1.png" alt="Latitude vs. Max Temperature" class="mr-3 content-image" alt="...">
+            </div>
+            <div class="text-left">
+              <p class="serif"> The purpose of this project was to analyze how weather changes as you get closer to the
+                  equator.  To accomplish this analysis, we first pulled data from the OpenWeatherMap
+                  API to assemble a dataset of over 500 cities. </p> <br>
+              <p class="serif"> After assembling the dataset, Matplotlib was used to plot various aspects of weather
+                  vs. latitude. Factors analyzed included: temperature, cloudiness, wind-speed and humidity.
+                  Additionally, Matplotlib was used to plot aspects of the weather using longitude
+                  vs. latitude. The intent was to visualize a world map using weather plots. This site
+                  provides the source data and visualizations created as part of the analysis,
+                  as well as explanations and descriptions of any trends and correlations witnessed. </p>
+            </div>
+          </div>
+          <div class="col-md-3 pad top"> <br>
+            <div class="pull-right">
+              <a href="lat_temps.html"><img src="Resources/assets/images/Fig1.png" alt="Latitude vs. Max Temperature" class="mr-3 content-image-plot1" alt="..."></a>
+              <a href="lat_wind.html"><img src="Resources/assets/images/Fig2.png" alt="Latitude vs. Wind Speed" class="mr-3 content-image-plot1" alt="..."></a>
+            </div>
+         </div>
+         <div class="col-md-3 pad top"> <br>
+          <div class="pull-right">
+            <a href="lat_hum.html"><img src="Resources/assets/images/Fig3.png" alt="Latitude vs. Humidity" class="mr-3 content-image-plot1" alt="..."></a>
+            <a href="lat_cloud.html"><img src="Resources/assets/images/Fig4.png" alt="Latitude vs. Cloudiness" class="mr-3 content-image-plot1" alt="..."></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </body>
+  
+</html>
